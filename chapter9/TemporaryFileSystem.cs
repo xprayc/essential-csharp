@@ -45,7 +45,7 @@ class TemporaryFileStream : IDisposable
         }
         
         // Turn off calling the finalizer
-        System.GC.SuppressFinalize(this);
+//       System.GC.SuppressFinalize(this);
     }
 
     public void Dispose()
@@ -64,5 +64,4 @@ class program
             System.Console.WriteLine("FileName: " + f.File.FullName);
         }
     }
-
 }

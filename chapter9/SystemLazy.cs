@@ -8,7 +8,7 @@ class DataCache
     public DataCache()
     {
         _fileStream = new Lazy<TemporaryFileStream>(
-            () => new TemporaryFileStream(FileStreamName));
+            () => new TemporaryFileStream());
     }
 
     public TemporaryFileStream FileStream
